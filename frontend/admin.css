@@ -1,0 +1,97 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Page background */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main container */
+.auth-container {
+    width: 380px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+/* Heading */
+.auth-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Inputs & textarea */
+.auth-container input,
+.auth-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.auth-container textarea {
+    resize: none;
+    height: 90px;
+}
+
+/* Focus effect */
+.auth-container input:focus,
+.auth-container textarea:focus {
+    border-color: #1e3c72;
+}
+
+/* Button */
+.auth-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #1e3c72;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.auth-container button:hover {
+    background: #16325c;
+    transform: translateY(-1px);
+}
+
+/* Message text */
+#message {
+    margin-top: 12px;
+    font-size: 14px;
+    color: green;
+}
+
+/* Home link */
+.auth-container a {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #1e3c72;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}
