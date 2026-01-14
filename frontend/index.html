@@ -7,6 +7,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h2>Connect Frontend to Backend</h2>
+<button onclick="getData()">Get Data</button>
+
+<script>
+function getData() {
+  fetch("http://localhost:5000/api/products")
+    .then(res => res.json())
+    .then(data => alert(data));
+}
+</script>
+
+
 
 <!-- ================= HEADER ================= -->
 <header>
@@ -64,7 +76,7 @@
 
 <!-- ================= FOOTER ================= -->
 <footer>
-  <p>© 2025 Tech-Cart | All Rights Reserved</p>
+  <p>© 2025 Tech-Cart || All Rights Reserved</p>
 </footer>
 
 <script src="script.js"></script>
